@@ -6,14 +6,14 @@ const Footer = () => {
     return (
         <footer className="bg-gray-900 text-gray-300">
             <div className="container mx-auto" style={{ paddingLeft: '1rem', paddingRight: '1rem', paddingTop: '3rem', paddingBottom: '3rem' }}>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4" style={{ gap: '2rem' }}>
                     {/* Company Info */}
                     <div>
                         <h3 className="text-white text-lg font-bold" style={{ marginBottom: '1rem' }}>MyApp</h3>
                         <p className="text-sm" style={{ marginBottom: '1rem' }}>
                             Building amazing web experiences with modern technology and creative solutions.
                         </p>
-                        <div className="flex space-x-4">
+                        <div className="flex" style={{ gap: '1rem' }}>
                             <a
                                 href="https://facebook.com"
                                 target="_blank"
@@ -64,7 +64,7 @@ const Footer = () => {
                     {/* Quick Links */}
                     <div>
                         <h3 className="text-white text-lg font-bold" style={{ marginBottom: '1rem' }}>Quick Links</h3>
-                        <ul className="space-y-2">
+                        <ul style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
                             <li>
                                 <a href="#" className="text-sm hover:text-white transition">
                                     About Us
@@ -91,7 +91,7 @@ const Footer = () => {
                     {/* Support */}
                     <div>
                         <h3 className="text-white text-lg font-bold" style={{ marginBottom: '1rem' }}>Support</h3>
-                        <ul className="space-y-2">
+                        <ul style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
                             <li>
                                 <a href="#" className="text-sm hover:text-white transition">
                                     Contact Us
@@ -121,7 +121,7 @@ const Footer = () => {
                         <p className="text-sm" style={{ marginBottom: '1rem' }}>
                             Subscribe to get the latest updates and news.
                         </p>
-                        <form className="flex flex-col space-y-2">
+                        <form className="flex flex-col" style={{ gap: '0.5rem' }}>
                             <input
                                 type="email"
                                 placeholder="Your email"
