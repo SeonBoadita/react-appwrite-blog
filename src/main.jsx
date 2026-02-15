@@ -4,11 +4,14 @@ import './index.css'
 import App from './App.jsx'
 import { Provider } from 'react-redux'
 import store from './store/store.js'
+import AuthLayout from './components/AuthLayout.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Provider store={store}>
-      <App />
+      <AuthLayout>
+        <App />
+      </AuthLayout>
     </Provider>
   </StrictMode>,
 )
